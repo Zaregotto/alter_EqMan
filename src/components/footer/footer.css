@@ -1,0 +1,41 @@
+.footer {
+    background-color: #0066ff;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box-social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-social img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.subscribe-box {
+    display: flex;
+    width: 15%;
+    height: 250px;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+

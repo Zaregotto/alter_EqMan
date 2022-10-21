@@ -29,3 +29,13 @@
     width: 20px;
     height: 25px;
 }
+
+.border {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .btn {
+        display: none;
+    }
+}

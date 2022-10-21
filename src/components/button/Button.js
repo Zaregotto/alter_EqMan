@@ -6,7 +6,7 @@ import "./Button.css"
 
 const Button = () => {
     return (
-        <Link to="/sign-up">
+        <Link className="border" to="/sign-up">
             <button className="btn">
                 Увійти
                 <img src={user} alt="user"/>
