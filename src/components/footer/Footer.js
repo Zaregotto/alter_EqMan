@@ -1,5 +1,4 @@
 import React from 'react';
-import {RiSendPlaneFill} from 'react-icons/ri';
 import {NavLink} from "react-router-dom";
 
 
@@ -9,6 +8,9 @@ import linkedin from '../../resources/linkedin.png'
 import instagram from '../../resources/instagram.png'
 import twitter from '../../resources/twitter.png'
 import youtube from '../../resources/youtube.png'
+import submit from '../../resources/send-mail.png'
+import payment from '../../resources/Visa-Mastercard.webp'
+import download from '../../resources/png-clipart-app-store-google-play-apple-apple-text-logo.png'
 
 
 import './footer.css'
@@ -18,7 +20,9 @@ const Footer = () => {
         <div className='footer'>
             <div className='footer-box'>
                   <div className='footer-box-social '>
+                      <NavLink to="/">
                       <img className="footer-logo" src={logo} alt="logo" height={100} width={100}/>
+                      </NavLink>
                       <h2>Name company</h2>
                       <div className='footer-social'>
                       <NavLink to={'/'}>
@@ -73,15 +77,26 @@ const Footer = () => {
                     <h5>contact1</h5>
                     <h5>contact1</h5>
                 </div>
-
-                <div className="subscribe">
-                    <h3>Subscribe</h3>
-                </div>
                 <div className="subscribe-box">
+                    <h3 className="subscribe-box-download">
+                        Download the APP
+                        <img src={download} alt="download"/>
+                    </h3>
+                    <h3 className="subscribe-box-payment">
+                    Payment Methods
+                        <img src={payment} alt="payment"/>
+                    </h3>
+                    <h3 className="subscribe">Subscribe</h3>
+                    <form action="#" method="#">
                     <input type="email" placeholder="Enter your Email"/>
-                    <RiSendPlaneFill className="subscribe-box-send" />
+                        <img src={submit} alt="submit"/>
+                    </form>
                 </div>
                 <div className="subscribe-box_info"></div>
+            </div>
+            <hr/>
+            <div className='footer-box-copyright'>
+                <h4> © Copyright 2022. All Rights Reserved. </h4>
             </div>
         </div>
     );

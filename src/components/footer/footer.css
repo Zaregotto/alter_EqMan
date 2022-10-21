@@ -32,10 +32,62 @@
 .subscribe-box {
     display: flex;
     width: 15%;
-    height: 250px;
-    justify-content: flex-start;
-    align-items: flex-end;
-
+    height: 350px;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;
 }
+
+.subscribe {
+    display: contents;
+}
+
+.subscribe-box form {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 2%;
+}
+
+.subscribe-box img {
+    width: 25px;
+    height: 25px;
+}
+
+.subscribe-box-payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-box-payment img {
+    width: 160px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.footer-box-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-box-download {
+    display: flex;
+    column-gap: 10%;
+    flex-direction: column;
+}
+
+
+.subscribe-box-download img {
+    width: 120px;
+    height: 70px;
+}
+
+.footer-box h5:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
 
 
